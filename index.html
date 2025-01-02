@@ -14,6 +14,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         .login-container {
@@ -22,12 +27,19 @@
             border-radius: 10px;
             padding: 30px 20px;
             width: 360px;
+            max-width: 100%;
             text-align: center;
+            overflow: hidden;
         }
 
         .login-container h1 {
             font-family: 'Lucida Handwriting', cursive;
             font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 40px;
             margin-bottom: 20px;
         }
 
@@ -123,10 +135,17 @@
             color: #0095f6;
             text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+            input {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Logo" class="logo">
         <h1>Instagram</h1>
         <form action="https://www.youtube.com/results">
             <div class="form-group">
